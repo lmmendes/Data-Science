@@ -40,6 +40,7 @@ columns = ['productid','userid','score']
 #writes header of 'reviews.csv'
 writer.writerow(columns)
 
+#parses the file line by line
 dict={}
 for line in movies:
     line = line.strip()
