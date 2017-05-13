@@ -27,8 +27,31 @@ columns = ['productid','userid','score']
 #writes header of 'reviews.csv'
 write.writerow(columns)
 
-
-
+dict={}
+for line in movies:
+    line = line.strip()
+    
+    #there is an empty line after each review entry
+    if not line:
+        #----->filter with helpfulness!
+        dict={}
+    else:
+        end = line.find(':')
+        key = line[:end]
+        start = key.find('/')
+        key = line[start:]
+        key = key.lower().strip()
+        
+        if key == 'helpfulness':
+            #-------->convert from string to float
+            
+        else:
+            value = line[end+1:]
+            value = value.strip()
+        
+        dict[key] = value
+if dict:
+    writer.writerow([dict.get(column) for column in columns])
 
 
 
