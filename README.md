@@ -7,7 +7,7 @@ This is a simple python recommendation engine based on a movie reviews dataset f
 - Download the 'movies.txt' dataset from http://snap.stanford.edu/data/web-Movies.html and place it on the data folder;
 - Run 'python txt_to_csv.py' to convert and filter the dataset;
 - When the conversion ends run 'python recommender.py <user_id>';
-- A list of 10 movie recommendations will appear on your terminal.
+- A list of 5 movie recommendations will appear on your terminal.
 
 # Relevant python libraries used:
 
