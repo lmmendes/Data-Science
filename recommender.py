@@ -58,8 +58,8 @@ def main():
     reviews_path = './data/reviews.csv'
     
     #saves the data from the csv file to a pandas dataframe
-    #here I use only 5.000 rows of data due to how long the program takes to run (also because my computer is too slow)
-    data = pd.read_csv(reviews_path,nrows=5000)
+    #here I use only 7.000 rows of data due to how long the program takes to run (also because my computer is too slow)
+    data = pd.read_csv(reviews_path,nrows=7000)
     
     #saves all the reviewed movies to a series
     all_products = data.productid.unique()
